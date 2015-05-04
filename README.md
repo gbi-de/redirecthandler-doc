@@ -28,7 +28,7 @@ Search engines continuously try to re-index the contents of *memorized* URLs.<br
 Lost traffic has to be rebuilt and positive rankings for SEO are lost permanently.
 
 ### Functionality of the redirect-handler
-![Functionality of the redirect-handler](https://cloud.githubusercontent.com/assets/12233660/7454526/d40d44f0-f274-11e4-9efb-1d830a241d94.png "Redirect Handler Sequence")
+![Functionality of the redirect-handler](https://github.com/gbi-de/redirecthandler-doc/blob/master/Funktionsweise_des_RDH.png?raw=true "Redirect Handler Sequence")
 
 **Background-query while a '404-page' is displayed on our website**<br>
 
@@ -36,10 +36,10 @@ Lost traffic has to be rebuilt and positive rankings for SEO are lost permanentl
 
 After the optimization the redirect-handler receieves progressively less traffic for the "old" URL. This is because the clients (users, search engines) will "remember" the new URL ovet time.<br>
 
-//BILD_Kernstücke_des_RDH//<br>
+![How the redirect-handler works](https://github.com/gbi-de/redirecthandler-doc/blob/master/Kernst%C3%BCck_des_RDH_II.PNG?raw=true "How the redirect-handler works")
 
 ### Analysis & Reporting
-//BILD_A_and_R//<br>
+![Analysis & Reporting](https://github.com/gbi-de/redirecthandler-doc/blob/master/Analysis_and_Reporting.png?raw=true "Analysis & Reporting")
 The reporting tools ensure a frequent optimization of the URL-managment. URLs that are reported as "404" can be subsequently added to URL-mappings and will thus operate as "redirects" (301) in the future.<br>
 
 ### Requirements
@@ -59,12 +59,12 @@ Movements of any page will be recognized by periodic scans (Shoprocket).<br>
 ### Advantage over the redirect by .htaccess
 ##### Up to now:
 **On the server-side, redirects are mostly processed via .htaccess.**<br>
-The installation of the redirect-/matching-table via .htaccess is disadvantageous (performance-wise) for every single request, beause the web-server processes the table without caching.<br>
-The matching-tables are adminstrated via Excel , which means: no valid revision control, no reportings and no user interface for the maintenance of the tables.<br>
+* The installation of the redirect-/matching-table via .htaccess is disadvantageous (performance-wise) for every single request, beause the web-server processes the table without caching.<br>
+* The matching-tables are adminstrated via Excel , which means: no valid revision control, no reportings and no user interface for the maintenance of the tables.<br>
 
 ##### New:
 **The redirect-handler engages itself in the error handling of the webserver.**<br>
-Valid "200" requests are never affected.<br>
-Malfunctioning requests are enqueued for correction.<br>
-The performance of the redirect-handler can be observed and regulated via the reporting. Corrupt links can be corrected in external systems.<br>
-Matching-tables are generated automatically.
+* Valid "200" requests are never affected.<br>
+* Malfunctioning requests are enqueued for correction.<br>
+* The performance of the redirect-handler can be observed and regulated via the reporting. Corrupt links can be corrected in external systems.<br>
+* Matching-tables are generated automatically.
