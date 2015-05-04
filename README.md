@@ -16,7 +16,7 @@ Websites consist of several thousand pages and URLs, which are modified constant
 Furthermore, relaunches take place every now and then.<br>
 
 **Inadequate handling of the URL can lead to a  massiv loss in traffic!**<br>
-Problems originate from the removal of products and from relaunches. Both can cause 404 errors (page not found).<br>
+Problems originate from the removal of products and from relaunches. Both can cause "404-errors" (page not found).<br>
 When removing one or more products, the underlying page cannot be generated anymore.<br>
 A relaunch can invalidate multiple URLs at one go.<br>
 
@@ -24,7 +24,7 @@ A relaunch can invalidate multiple URLs at one go.<br>
 For example: bookmarks in the user's browser; links in blogs or bulletin boards.<br>
 Search engines continuously try to re-index the contents of *memorized* URLs.<br>
 
-**As a consequence, the users may be lost and will  leave the page, without searching for alternatives and external partners might not link to your website anymore.**<br>
+**As a consequence, the users may be lost and will  leave the page, without searching for alternatives. External partners might not link to your website anymore.**<br>
 Lost traffic has to be rebuilt and positive rankings for SEO are lost permanently.
 
 ### Functionality of the redirect-handler
@@ -34,7 +34,7 @@ Lost traffic has to be rebuilt and positive rankings for SEO are lost permanentl
 
 **Advantage:** the redirect-handler will only be invoked, if the page cannot be provided by the server.<br>
 
-After the optimization the redirect-handler receieves progressively less traffic for the "old" URL. This is because the clients (users, search engines) will "remember" the new URL ovet time.<br>
+After the optimization the redirect-handler receieves progressively less traffic for the "old" URL. This is because the clients (users, search engines) will "remember" the new URL over time.<br>
 
 ![How the redirect-handler works](https://github.com/gbi-de/redirecthandler-doc/blob/master/Kernst%C3%BCck_des_RDH_II.PNG?raw=true "How the redirect-handler works")
 
@@ -59,12 +59,12 @@ Movements of any page will be recognized by periodic scans (Shoprocket).<br>
 ### Advantage over the redirect by .htaccess
 ##### Up to now:
 **On the server-side, redirects are mostly processed via .htaccess.**<br>
-* The installation of the redirect-/matching-table via .htaccess is disadvantageous (performance-wise) for every single request, beause the web-server processes the table without caching.<br>
+* The installation of the redirect-/matching-table via .htaccess is disadvantageous (performance-wise) for every single request, because the web-server processes the table without caching.<br>
 * The matching-tables are adminstrated via Excel , which means: no valid revision control, no reportings and no user interface for the maintenance of the tables.<br>
 
 ##### New:
 **The redirect-handler engages itself in the error handling of the webserver.**<br>
 * Valid "200" requests are never affected.<br>
 * Malfunctioning requests are enqueued for correction.<br>
-* The performance of the redirect-handler can be observed and regulated via the reporting. Corrupt links can be corrected in external systems.<br>
+* The performance of the redirect-handler can be observed and regulated via the reporting tool. Corrupt links can be corrected in external systems.<br>
 * Matching-tables are generated automatically.
