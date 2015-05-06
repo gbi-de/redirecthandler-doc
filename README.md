@@ -34,7 +34,7 @@ Lost traffic has to be rebuilt and positive rankings for SEO are lost permanentl
 
 **Advantage:** the redirect-handler will only be invoked, if the page cannot be provided by the server.<br>
 
-After the optimization the redirect-handler receieves progressively less traffic for the "old" URL. This is because the clients (users, search engines) will "remember" the new URL over time.<br>
+After the optimization the redirect-handler receives progressively less traffic for the "old" URL. This is because the clients (users, search engines) will "remember" the new URL over time.<br>
 
 ![How the redirect-handler works](https://github.com/gbi-de/redirecthandler-doc/blob/master/Kernst%C3%BCck_des_RDH_II.PNG?raw=true "How the redirect-handler works")
 
@@ -60,7 +60,7 @@ Movements of any page will be recognized by periodic scans (Shoprocket).<br>
 ##### Up to now:
 **On the server-side, redirects are mostly processed via .htaccess.**<br>
 * The installation of the redirect-/matching-table via .htaccess is disadvantageous (performance-wise) for every single request, because the web-server processes the table without caching.<br>
-* The matching-tables are adminstrated via Excel , which means: no valid revision control, no reportings and no user interface for the maintenance of the tables.<br>
+* The matching-tables are adminstrated via Excel, which means: no valid revision control, no reportings and no user interface for the maintenance of the tables.<br>
 
 ##### New:
 **The redirect-handler engages itself in the error handling of the webserver.**<br>
