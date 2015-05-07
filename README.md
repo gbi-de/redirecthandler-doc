@@ -33,12 +33,12 @@ Examples:
 As a consequence, the users may be lost and will  leave the page, without searching for alternatives. External partners might not link to your website anymore.
 Lost traffic has to be rebuilt and positive rankings for SEO are lost permanently.
 
-## Functionality of the redirect-handler
+## Functionality of the Redirect Handler
 ![Functionality of the redirect-handler](https://github.com/gbi-de/redirecthandler-doc/blob/master/rh-sequence.png?raw=true "Redirect Handler Sequence")
 
-* Background query while a '404-page' is displayed on our website. This will only be invoked if the page cannot be provided by the server anyway.
+Background query while a '404-page' is displayed on our website. This will only be invoked if the page cannot be provided by the server anyway.
 
-After the optimization the redirect-handler receives progressively less traffic for the "old" URL. This is because the clients (users, search engines) will remember and cache the new URL over time.
+Over time, the redirect handler receives progressively less traffic for the "old" URL. This is because the clients (users, search engines) will remember and cache the new URL over time.
 
 ## Additional Features
 
